@@ -6,12 +6,12 @@
 
 #### 1.克隆项目
 ```console
-$ git clone https://github.com/zhalice2011/gulp-postcss.git
+$ git clone https://github.com/dc233/gulp-static-moblie.git
 ```
 
 #### 2.安装依赖
 ```console
-$ cd gulp-postcss && npm  install
+$ cd gulp-static-moblie && npm  install
 ```
 
 #### 3.项目运行
