@@ -6,7 +6,9 @@ const gulp = require("gulp")
 const vx = require("postcss-px-to-viewport")
 const postcss = require("gulp-postcss")
 const brower_sync = require("browser-sync")
-
+const jshint = require('gulp-jshint'); 
+const uglify = require('gulp-uglify'); // 引入js压缩模块
+const minhtml = require('gulp-minify-html'); // 引入html压缩模块
 // 定义换算的任务 将css目录下的所有css文件中的px转换成vm
 const task_pxtovm = (done) => {
 
@@ -40,9 +42,12 @@ const task_pxtovm = (done) => {
 const task_move_assets = (done) => {
 
 	gulp.src("./*.html")
+		.pipe(minhtml()) //进行压缩
 		.pipe(gulp.dest("build/"))
 
 	gulp.src("./js/*.js")
+		.pipe(jshint())
+		.pipe(uglify())
 		.pipe(gulp.dest("build/js/"))
 
 	gulp.src("./images/*")

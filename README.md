@@ -1,6 +1,7 @@
 # gulp-postcss
 移动端自适应VW布局-----工作流构建
-
+web端 注释掉gulp-file.js 里的px转化成vw
+pipe(postcss(processors)) 
 
 ## 使用方法
 

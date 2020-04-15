@@ -1,3 +1,6 @@
+* {
+    touch-action: pan-y;
+}
 body,
 html {
     margin: 0;
@@ -11,7 +14,7 @@ html {
 
 body {
     min-height: 100%;
-    background-color: #f4f4f4
+    background-color: #f4f4f4;
 }
 
 *,
@@ -102,17 +105,31 @@ img {
 }
 
 header{
-    padding-top: 40px;
+    /* padding-top: 40px;
     padding-bottom: 30px;
     padding-left: 50px;
     font-weight: bold;
-    color:rgb(233, 25, 25);
+    color:rgb(92, 92, 92);
     background: #eee;
-    font-size: 50PX;   /*还有一种投机取巧的方法是px写成大写PX这样也不会进行转换*/ 
+    font-size: 50PX;   /*还有一种投机取巧的方法是px写成大写PX这样也不会进行转换*/
 
 }
-/* header.ignore{
-    font-size: 19px
-} */
-
+.delete { display: none; }
+#items {
+    width: 750px;
+    background-color: #3333;
+}
+#items li{
+    height: 200px;
+    font-size: 20px;
+}
+.swiper-container {
+    width: 750px;
+    height: 300px;
+} 
+.swiper-container{
+    --swiper-theme-color: #ff6600;/* 设置Swiper风格 */
+    --swiper-navigation-color: #333;/* 单独设置按钮颜色 */
+    --swiper-navigation-size: 30px;/* 设置按钮大小 */
+  }
 
