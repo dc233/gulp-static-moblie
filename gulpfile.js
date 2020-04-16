@@ -32,7 +32,7 @@ const task_pxtovm = (done) => {
     ];
 
 	gulp.src("./css/*.css")
-		.pipe(postcss(processors))
+			
 		.pipe(gulp.dest("build/css/"))
 		
 	done()
