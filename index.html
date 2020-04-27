@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta content="yes" name="apple-mobile-web-app-capable">
@@ -13,8 +12,7 @@
     <link rel="stylesheet" href="https://cdn.bootcss.com/Swiper/5.3.7/css/swiper.min.css">
     <title>Gulp构建移动端适配</title>
 </head>
-
-<body>
+<body  onload="init();">
     <!-- 页面结构写在这里 -->
     <header>
         <div class="swiper-container">
@@ -37,6 +35,14 @@
         <li>List item 1 <span class=delete>DELETE</span></li>
         <li>List item 2 <span class=delete>DELETE</span></li>
     </ul> 
+    <button class="btn">点击切换主题</button>
+    <canvas id="demoCanvas" width="500" height="300"></canvas>
+    <div class="content">
+        <div class="item"><p>1</p></div>
+        <div class="item"><p>2</p></div>
+        <div class="item"><p>3</p></div>
+        <div class="item"><p>4</p></div>
+    </div>
     <main>
         <div class="banner" w-750-235="" aspectratio>
             <div aspectratio-content="">
@@ -98,7 +104,19 @@
     <footer><img src="images/footer.png"></footer>
     <script src="https://cdn.bootcss.com/zepto/1.2.0/zepto.min.js"></script>
     <script src="https://cdn.bootcss.com/Swiper/5.3.7/js/swiper.min.js"></script>
+    <script src="//cdn.bootcss.com/EaselJS/0.8.0/easeljs.min.js" charset="utf-8"></script>
     <script src="./js/index.js"></script>
+    <script>
+        // window.onload  = function() {
+        //     // 取出主题值
+        //     let theme = localStorage.getItem('theme')
+        //     if(theme) {
+        //         document.documentElement.setAttribute('data-theme', theme)
+        //     }else {
+        //         document.documentElement.setAttribute('data-theme', 'light')
+        //     }
+        // }
+    </script>
 </body>
 
 </html>
